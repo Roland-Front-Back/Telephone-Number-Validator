@@ -44,7 +44,7 @@ h1 {
   gap: 20px;
   width: 360px;
   max-width: 100%;
-  height: 300px;
+  height: 400px;
   border-radius: 10px;
   background-color: var(--color2);
   box-shadow: 0px 1px 1px 5px rgba(255, 0, 0, 0.5);
@@ -82,6 +82,16 @@ input:focus {
   background: none;
 }
 
+.buttons-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 280px;
+  max-width: 100%;
+  padding: 2px;
+}
+
 .check-btn {
   width: 100px;
   max-width: 100%;
@@ -109,25 +119,70 @@ button:hover {
   color: var(--color7);
 }
 
-.result-div {
+.clear-btn {
+  width: 100px;
+  max-width: 100%;
+  height: 30px;
+  font-family: var(--roboto);
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color5);
+  color: var(--color6);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(5, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  cursor: pointer;
+}
+
+.results-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  padding: 3px;
   width: 300px;
   max-width: 100%;
-  height: 135px;
+  height: 230px;
   border-radius: 5px;
   background-color: var(--color3);
   box-shadow: 0px 1px 1px 5px rgba(0, 0, 0, 0.719);
+  overflow-y: auto;
+  margin: 2px;
+}
+
+.results-div::-webkit-scrollbar {
+  width: 10px;
+}
+
+.results-div::-webkit-scrollbar-track {
+  background-color: var(--color2);
+  border-radius: 20px;
+}
+
+.results-div::-webkit-scrollbar-thumb {
+  background-color: var(--color5);
+  border-radius: 20px;
+  border: 1px solid var(--color2);
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+  list-style: none;
+  font-family: var(--roboto);
+}
+
+span {
+  margin: 3px;
 }
 
 .text {
-  height: 40px;
+  height: 25px;
   justify-content: center;
   text-align: center;
   font-family: var(--roboto);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -135,7 +190,7 @@ button:hover {
   justify-content: center;
   text-align: center;
   font-family: var(--roboto);
-  font-size: 35px;
+  font-size: 25px;
   color: var(--color2);
 }
 
