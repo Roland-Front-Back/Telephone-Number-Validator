@@ -19,8 +19,7 @@ const checkInput = () => {
     </li>
     `;
     })
-    .reverse()
-    .join("\n");
+    .reverse();
 
   results.innerHTML = `<ul>${inputList}</ul>`;
 };
